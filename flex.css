@@ -63,7 +63,42 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width:1024px){
+.quarter{
+  width: 48%;
+}
 
+.flex-container{
+  height: fit-content;
+}
+
+.quarter{
+  width:48%;
+}
+
+.third{
+  width:48%;
+  order:2
+}
+/* hope i never use this tag*/
+.third:last-of-type{
+width: 97%;
+/* flex-grow: 1; */
+order:1;
+}
+}
+
+/* hella cool, */
+@media screen and ( max-width:520px){
+  div[class^='box']
+
+  /* usfull way to list what changes neatly*/
+  .half,
+  .third,
+  .quarter {
+  width: 97%;
+  }
+}
 
 
 
